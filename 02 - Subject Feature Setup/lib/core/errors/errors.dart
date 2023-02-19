@@ -14,6 +14,7 @@ class InvalidInputFailure extends Failure {
       : super(errorMessage: errorMessage);
 }
 
-class DBFailure extends Failure {
-  const DBFailure({String? errorMessage}) : super(errorMessage: errorMessage);
+class DatabaseFailure extends Failure {
+  const DatabaseFailure({String? errorMessage})
+      : super(errorMessage: errorMessage);
 }

@@ -1,4 +1,5 @@
 import 'package:classy/core/core.dart';
+import 'package:classy/src/subjects/subject.dart';
 import 'package:flutter/material.dart';
 
 class MainPage extends StatelessWidget {
@@ -10,8 +11,8 @@ class MainPage extends StatelessWidget {
       appBar: AppBar(
         title: Text(AppLocalizations.of(context)!.helloWorld),
       ),
-      body: Center(
-        child: Text(AppLocalizations.of(context)!.helloWorld),
+      body: const Center(
+        child: SubjectPage(),
       ),
     );
   }
